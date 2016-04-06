@@ -1,0 +1,16 @@
+
+FQ1
+Fast		:Drive-In	Quick	Fast	Line	
+Sit-down	:Server		Service	Table	Wait	
+
+FQ2
+Alcohol	:Beer	Wine	Drinks	Alcohol	
+Kids	:Kids	Child	Family	Games
+
+FQ3
+Hot:	Hot	Spicy	Warm	Medium	Well
+Cold:	Sandwiches	Smoothies	Sushi	Cold
+
+FQ4:
+Local:	Local	Niche	Small	Unique
+Chain:	Chain	Franchise	Commercial
