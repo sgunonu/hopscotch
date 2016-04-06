@@ -1,1 +1,2 @@
 # hopscotch
+How to run:
