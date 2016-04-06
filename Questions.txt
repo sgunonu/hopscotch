@@ -1,16 +1,15 @@
+Food Questions
 
-FQ1
-Fast		:Drive-In	Quick	Fast	Line	
-Sit-down	:Server		Service	Table	Wait	
+Local			      Chain
+Fast			      Sit-down
+Adult			      Kids
+Hearty    			Light
+<10$ per meal 	>10$ per meal
 
-FQ2
-Alcohol	:Beer	Wine	Drinks	Alcohol	
-Kids	:Kids	Child	Family	Games
+Entertainment Questions
 
-FQ3
-Hot:	Hot	Spicy	Warm	Medium	Well
-Cold:	Sandwiches	Smoothies	Sushi	Cold
-
-FQ4:
-Local:	Local	Niche	Small	Unique
-Chain:	Chain	Franchise	Commercial
+Group			      Solo
+Active			    Chill
+Night			      Day
+Adult			      Kids
+<50$			      >50$
