@@ -1,9 +1,12 @@
 # Hopscotch
 How to run: python hopscotch.py
 
-1. Input city name such as Houston or Cleveland
-2. Answer questions based on mood 
-For example: Question: How are you feeling? 1.hungry or 2.bored? 
+1. Input city name.
+2. Answer questions based on mood.
+
+For example: 
+Location: Houston
+Question: How are you feeling? 1.hungry or 2.bored? 
 Answer: 1
 Question: What sort of food? 1.fast or 2.sitdown?
 Answer: 1
