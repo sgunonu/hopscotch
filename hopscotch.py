@@ -11,6 +11,50 @@ from yelp.oauth1_authenticator import Oauth1Authenticator
 listoflists = []
 mainlist = []
 
+paramsHungry = {
+'sort': '2',
+'term': 'hungry',
+'term': 'restaurant',
+'term': 'food',
+'term': 'meal',
+'term': 'breakfast',
+'term': 'lunch',
+'term': 'dinner',
+'term': 'snack',
+'term': 'eat',
+'term': 'eating',
+'term': 'drink',
+'term': 'dessert',
+'term': 'starving',
+'term': 'yum',
+'term': 'dining',
+'term': 'dine',
+'term': 'dive',
+'lang': 'en',
+}
+
+paramsBored = {
+'sort': '2',
+'term': 'fun',
+'term': 'great',
+'term': 'amusing',
+'term': 'funny',
+'term': 'attraction',
+'term': 'shopping',
+'term': 'sports',
+'term': 'recreation',
+'term': 'leisure',
+'term': 'pleasure',
+'term': 'excitement',
+'term': 'great experience',
+'term': 'recommend',
+'term': 'favorite',
+'term': 'exciting',
+'term': 'gem',
+'term': 'popular',
+'lang': 'en',
+}
+
 paramsActive = {
 'sort': '2',
 'term': 'bowling',
