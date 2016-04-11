@@ -10,8 +10,7 @@ from yelp.oauth1_authenticator import Oauth1Authenticator
 #global loc
 listoflists = []
 mainlist = []
-paramsA = {};
-paramsB = {};
+
 paramsHungry = {
 'sort': '2',
 'term': 'hungry',
@@ -141,7 +140,7 @@ paramsSitDown = {
 'term': 'gratuity',
 'lang': 'en',
 }
-def yelp(loc, feeling):
+def yelp(loc, feeling, paramsA, paramsB):
     auth = Oauth1Authenticator(
         consumer_key="NnmZFkzKNYQ0zeJ0lHQcBQ",
         consumer_secret="w7eAQ8cOW5gMLgVGc8-Oe3Qz_2Y",
@@ -198,44 +197,28 @@ def main():
     # ask the first main question
     print '"{}"'.format('How are you feeling: 1.hungry or 2.bored?')
     feeling = raw_input()
-    paramsA = paramsHungry;
-    paramsB = paramsBored;
     
-    yelp(loc, feeling)
+    yelp(loc, feeling, paramsHungry, paramsBored)
   
-    paramsA = {};
-    paramsB = {};
     if(feeling == 1)
     {
         print '"{}"'.format('What sort of food? 1.fast or 2.sitdown?')
         hun1 = raw_input()
-        paramsA = paramsFast;
-        paramsB = paramsSitDown;
     
-        yelp(loc, hun1)
-  
-        paramsA = {};
-        paramsB = {}; 
+        yelp(loc, hun1, paramsFast, paramsSitDown)
+
     }
     
     elif(feeling == 2)
     {
         print '"{}"'.format('What sort of fun? 1.active or 2.chill?')        
         fun1 = raw_input()
-        paramsA = paramsActive;
-        paramsB = paramsChill;
     
-        yelp(loc, fun1)
+        yelp(loc, fun1, paramsActive, paramsChill)
   
-        paramsA = {};
-        paramsB = {};
     }
     #if(feeling == '1'):
         
         
     #else(feeling == '2'):
         
-    
-
-    
-main()
