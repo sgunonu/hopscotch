@@ -5,7 +5,8 @@ Created on Wed Apr  6 11:29:56 2016
 @author: rabiagunonu
 """
 
-from geolocation.google_maps import GoogleMaps
+from geolocation.main import GoogleMaps 
+from geolocation.distance_matrix.client import DistanceMatrixApiClient
 
 address = "New York City Wall Street 12"
 
