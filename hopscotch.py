@@ -140,7 +140,7 @@ paramsSitDown = {
 'term': 'gratuity',
 'lang': 'en',
 }
-def yelp(loc, feeling):
+def yelp(loc, feeling, paramsA, paramsB):
     auth = Oauth1Authenticator(
         consumer_key="NnmZFkzKNYQ0zeJ0lHQcBQ",
         consumer_secret="w7eAQ8cOW5gMLgVGc8-Oe3Qz_2Y",
@@ -151,23 +151,23 @@ def yelp(loc, feeling):
     client = Client(auth)
     
     if(feeling == '1'):
-        params1 = {
-            'sort': '2',
+        #params1 = {
+            #'sort': '2',
             #'sort': '1',
-            'term': 'food',
-            'lang': 'en',
+            #'term': 'food',
+            #'lang': 'en',
             #'radius_filter': '10'
-        }
-        response = client.search(loc, **params1)
+       # }
+        response = client.search(loc, **paramsA)
     elif(feeling == '2'):
-        params2 = {
-            'sort': '2',
+        #params2 = {
+            #'sort': '2',
             #'sort': '1',
-            'term': 'fun',
-            'lang': 'en',
+            #'term': 'fun',
+            #'lang': 'en',
             #'radius_filter': '10'
-        }
-        response = client.search(loc, **params2)
+        #}
+        response = client.search(loc, **paramsB)
     
     #mainlist.append(response.total)
     
@@ -198,14 +198,27 @@ def main():
     print '"{}"'.format('How are you feeling: 1.hungry or 2.bored?')
     feeling = raw_input()
     
-    yelp(loc, feeling)
+    yelp(loc, feeling, paramsHungry, paramsBored)
+  
+    if(feeling == 1)
+    {
+        print '"{}"'.format('What sort of food? 1.fast or 2.sitdown?')
+        hun1 = raw_input()
     
+        yelp(loc, hun1, paramsFast, paramsSitDown)
+
+    }
+    
+    elif(feeling == 2)
+    {
+        print '"{}"'.format('What sort of fun? 1.active or 2.chill?')        
+        fun1 = raw_input()
+    
+        yelp(loc, fun1, paramsActive, paramsChill)
+  
+    }
     #if(feeling == '1'):
         
         
     #else(feeling == '2'):
         
-    
-
-    
-main()
