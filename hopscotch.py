@@ -10,7 +10,8 @@ from yelp.oauth1_authenticator import Oauth1Authenticator
 #global loc
 listoflists = []
 mainlist = []
-
+paramsA = {};
+paramsB = {};
 paramsHungry = {
 'sort': '2',
 'term': 'hungry',
@@ -151,23 +152,23 @@ def yelp(loc, feeling):
     client = Client(auth)
     
     if(feeling == '1'):
-        params1 = {
-            'sort': '2',
+        #params1 = {
+            #'sort': '2',
             #'sort': '1',
-            'term': 'food',
-            'lang': 'en',
+            #'term': 'food',
+            #'lang': 'en',
             #'radius_filter': '10'
-        }
-        response = client.search(loc, **params1)
+       # }
+        response = client.search(loc, **paramsA)
     elif(feeling == '2'):
-        params2 = {
-            'sort': '2',
+        #params2 = {
+            #'sort': '2',
             #'sort': '1',
-            'term': 'fun',
-            'lang': 'en',
+            #'term': 'fun',
+            #'lang': 'en',
             #'radius_filter': '10'
-        }
-        response = client.search(loc, **params2)
+        #}
+        response = client.search(loc, **paramsB)
     
     #mainlist.append(response.total)
     
@@ -197,9 +198,38 @@ def main():
     # ask the first main question
     print '"{}"'.format('How are you feeling: 1.hungry or 2.bored?')
     feeling = raw_input()
+    paramsA = paramsHungry;
+    paramsB = paramsBored;
     
     yelp(loc, feeling)
+  
+    paramsA = {};
+    paramsB = {};
+    if(feeling == 1)
+    {
+        print '"{}"'.format('What sort of food? 1.fast or 2.sitdown?')
+        hun1 = raw_input()
+        paramsA = paramsFast;
+        paramsB = paramsSitDown;
     
+        yelp(loc, hun1)
+  
+        paramsA = {};
+        paramsB = {}; 
+    }
+    
+    elif(feeling == 2)
+    {
+        print '"{}"'.format('What sort of fun? 1.active or 2.chill?')        
+        fun1 = raw_input()
+        paramsA = paramsActive;
+        paramsB = paramsChill;
+    
+        yelp(loc, fun1)
+  
+        paramsA = {};
+        paramsB = {};
+    }
     #if(feeling == '1'):
         
         
