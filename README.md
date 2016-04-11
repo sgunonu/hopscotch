@@ -1,4 +1,4 @@
-# hopscotch
+# Hopscotch
 How to run: python hopscotch.py
 
 1. Input city name such as Houston or Cleveland
