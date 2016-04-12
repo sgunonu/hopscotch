@@ -9,9 +9,11 @@ then run the program using: python hopscotch.py
 
 For example: 
 Location: Houston
-Question: How are you feeling? 1.hungry or 2.bored
+Question: How are you feeling? 
+1.hungry or 2.bored
 Answer: 1
-Question: What sort of food? 1.fast or 2.sitdown
+Question: What sort of food? 
+1.fast or 2.sitdown
 Answer: 1
 
 These are the sample questions that we have ready for now. Each choice will have corresponding specific parameters related that will work along with the Yelp API to get optimal results. (The parameters are included in the hopscotch.py)
