@@ -1,5 +1,8 @@
 # Hopscotch
-How to run: python hopscotch.py
+How to run: 
+If not already installed, install the Yelp python package using: pip install yelp
+
+then run the program using: python hopscotch.py
 
 1. Input city name.
 2. Answer questions based on mood.
