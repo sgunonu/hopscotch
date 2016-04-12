@@ -21,6 +21,7 @@ These are the sample questions that we have ready for now. Each choice will have
 If you are looking for "fast" if you are hungry the parameters will include; 'drive thru','drive through','fast food','fast','cashier','value menu','quick','self serve','food line','sandwich line','quantity','diner','counter','fast casual','take out','quick service','cafeteria'. Then, the mainlist will be populated by restaurants that are affiliated with these terms.
 
 The following are the program's steps simplified:
+
 1. Take in the given user input for the first main question and add the resulting restaurants to a list. 
 2. Take in the second answer and add those specific results with the corresponding key parameters to the main list. 
 3. The process will be repeated with a few other different questions that will help in predicting what place the user should go to.
