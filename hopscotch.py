@@ -15,10 +15,10 @@ citylist = []
 
 def yelp(loc, feeling, paramsA, paramsB):
     auth = Oauth1Authenticator(
-        consumer_key="NnmZFkzKNYQ0zeJ0lHQcBQ",
-        consumer_secret="w7eAQ8cOW5gMLgVGc8-Oe3Qz_2Y",
-        token="z1jrNwOaEXGX-xlI0X31YdLzLoTg_gDo",
-        token_secret="jRSxlgyKVPkBHw2gDkooYz8YuPA"
+        consumer_key="Q7OyV59ytZdO-zuAo3Rl0g",
+        consumer_secret="xNOuCM0FhUthxpA8RFiQgEPtFaM",
+        token="EE_wX2qYssWNzSLL65gFCg9ciTbf1sEL",
+        token_secret="gHEEbPgA66UVFAC3bmmehi6kY3I"
     )
     
     client = Client(auth)
@@ -252,8 +252,5 @@ def main():
     print ratinglist[position[0]]
     print "City:"
     print citylist[position[0]]
-    
-    
-    
-    
+       
 main()
