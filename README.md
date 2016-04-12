@@ -9,10 +9,23 @@ then run the program using: python hopscotch.py
 
 For example: 
 Location: Houston
-Question: How are you feeling? 1.hungry or 2.bored? 
+Question: How are you feeling? 1.hungry or 2.bored
 Answer: 1
-Question: What sort of food? 1.fast or 2.sitdown?
+Question: What sort of food? 1.fast or 2.sitdown
 Answer: 1
 
-These are the sample questions that we have ready for now. These terms take in specific parameters which are included in the hopscotch.py. If you are looking for the term "fast" your parameters will be; 'drive thru','drive through','fast food','fast','cashier','value menu','quick','self serve','food line','sandwich line','quantity','diner','counter','fast casual','take out','quick service','cafeteria'. Then the mainlist will be populated by restaurants that are affiliated with these terms.
-Overall, we take in first given user input and add the resulting restaurants to a list, then we take in the second answer and add the results to the list. Then in the end we count the businesses that appear most in the list, and use an equation similar to the TF-IDF to determine the best results. We identify the most common top three places in the lists and then we multiply them by their rating scores. In a way this makes it similar to a weighted TF-IDF scaling system. The restaurant that is most common and has the highest rating will be recommended to the user.
+These are the sample questions that we have ready for now. Each choice will have corresponding specific parameters related that will work along with the Yelp API to get optimal results. (The parameters are included in the hopscotch.py)
+
+If you are looking for "fast" if you are hungry the parameters will include; 'drive thru','drive through','fast food','fast','cashier','value menu','quick','self serve','food line','sandwich line','quantity','diner','counter','fast casual','take out','quick service','cafeteria'. Then, the mainlist will be populated by restaurants that are affiliated with these terms.
+
+The following are the program's steps simplified:
+1. Take in the given user input for the first main question and add the resulting restaurants to a list. 
+2. Take in the second answer and add those specific results with the corresponding key parameters to the main list. 
+3. The process will be repeated with a few other different questions that will help in predicting what place the user should go to.
+4. The program figures out the frequency of the businesses in the complete list.
+5. Then, it chooses the ones that appear most in the list.
+6. Finally, uses an equation similar to the TF-IDF to determine the best results. 
+
+For now, our program identifies the most common top three places in the lists and then multiplies their frequency by their rated scores. This method is therefore similar to a weighted TF-IDF scaling system. 
+
+In the end, the business that is considered the best option according to the user's answers (shows up more frequently in the mainlist) with highest rating will be recommended to the user. There will also be a backup option in case the user was not convinced with the first.
