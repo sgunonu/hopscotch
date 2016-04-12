@@ -1,6 +1,6 @@
 # Hopscotch
 How to run: 
-If not already installed, install the Yelp python package using: pip install yelp
+If not already installed, install the Yelp python package by typing into command prompt: pip install yelp
 
 then run the program using: python hopscotch.py
 
