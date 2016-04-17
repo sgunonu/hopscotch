@@ -183,201 +183,241 @@ def main():
     'term': 'tip',
     'term': 'gratuity',
     'lang': 'en',
+        }
+        
+    paramsLocal = {
+    'sort': '2',
+    'term': 'local',
+    'term': 'small business',
+    'term': 'new',
+    'term': 'start up',
+    'term': 'trend',
+    'term': 'trendy',
+    'term': 'young',
+    'term': 'hot spot',
+    'term': 'fresh spin',
+    'term': 'hole in the wall',
+    'term': 'unknown',
+    'term': 'secret',
+    'term': 'fusion',
+    'term': 'unique',
+    'term': 'local deals',
+    'term': 'family owned',
+    'term': 'family operated',
+    'lang': 'en',
     }
     
-paramsLocal = {
-'sort': '2',
-'term': 'local',
-'term': 'small business',
-'term': 'new',
-'term': 'start up',
-'term': 'trend',
-'term': 'trendy',
-'term': 'young',
-'term': 'hot spot',
-'term': 'fresh spin',
-'term': 'hole in the wall',
-'term': 'unknown',
-'term': 'secret',
-'term': 'fusion',
-'term': 'unique',
-'term': 'local deals',
-'term': 'family owned',
-'term': 'family operated',
-'lang': 'en',
-}
+    
+    
+    paramsChain = {
+    'sort': '2',
+    'term': 'chain',
+    'term': 'franchise',
+    'term': 'consistent',
+    'term': 'conservative',
+    'term': 'easy',
+    'term': 'regular',
+    'term': 'large business',
+    'term': 'corporation',
+    'term': 'constant',
+    'term': 'normal',
+    'term': 'expected',
+    'term': 'same',
+    'term': 'well-known',
+    'term': 'same',
+    'term': 'famous',
+    'term': 'expansion',
+    'term': 'international',
+    'lang': 'en',
+    }
+    
+    paramsGroup = {
+    
+    'sort': '2',
+    'term': 'group',
+    'term': 'family',
+    'term': 'friends',
+    'term': 'group rate',
+    'term': 'team',
+    'term': 'teambuilding',
+    'term': 'retreat',
+    'term': 'clan',
+    'term': 'class',
+    'term': 'company',
+    'term': 'crowd',
+    'term': 'league',
+    'term': 'congregation',
+    'term': 'party',
+    'term': 'assembly',
+    'term': 'groups',
+    'lang': 'en',
+    }
+    
+    paramsSolo = {
+    
+    'sort': '2',
+    'term': 'alone',
+    'term': 'single',
+    'term': 'books',
+    'term': 'library',
+    'term': 'museum',
+    'term': 'spa',
+    'term': 'massage',
+    'term': 'park',
+    'term': 'shopping',
+    'term': 'stargazing',
+    'term': 'movies',
+    'term': 'rental',
+    'term': 'introvert',
+    'term': 'study',
+    'term': 'meditation',
+    'term': 'trail',
+    'lang': 'en',
+    }
+    
+    paramsNight = {
+    
+    'sort': '2',
+    'term': 'night',
+    'term': 'night life',
+    'term': 'club',
+    'term': 'bar',
+    'term': 'concert',
+    'term': 'pub',
+    'term': 'stars',
+    'term': 'late',
+    'term': 'dark',
+    'term': 'evening',
+    'term': 'main event',
+    'term': 'lounge',
+    'term': 'hookah',
+    'term': 'party',
+    'term': 'arcade',
+    'term': 'entertainment',
+    'lang': 'en',
+    }
+    
+    paramsDay = {
+    
+    'sort': '2',
+    'term': 'day',
+    'term': 'sunlight',
+    'term': 'sports',
+    'term': 'park',
+    'term': 'sunny',
+    'term': 'warm',
+    'term': 'hiking',
+    'term': 'bike',
+    'term': 'swim',
+    'term': 'water',
+    'term': 'trail',
+    'term': 'historical',
+    'term': 'lunch',
+    'term': 'breakfast',
+    'term': 'early',
+    'term': 'walk',
+    'lang': 'en',
+    }
+    
+    paramsAdult = {
+    'sort': '2',
+    'term': 'adult ',
+    'term': 'alcohol',
+    'term': 'over 21',
+    'term': 'beer',
+    'term': 'wine',
+    'term': 'bar',
+    'term': 'mature',
+    'lang': 'en',
+    }
+    
+    paramsKids = {
+    'sort': '2',
+    'term': 'family',
+    'term': 'fun',
+    'term': 'activities',
+    'term': 'kid friendly',
+    'term': 'children',
+    'term': 'play',
+    'term': 'baby',
+    'term': 'parents',
+    'term': 'safe',
+    'term': 'family-style',
+    'lang': 'en',
+    }
+    
+    paramsCheap = {
+    'sort': '2',
+    'term': 'cheap',
+    'term': 'low-priced',
+    'term': 'reasonable',
+    'term': 'low-cost',
+    'term': 'economical',
+    'term': 'budget',
+    'term': 'bargain',
+    'term': 'moderate',
+    'term': 'inexpensive',
+    'lang': 'en',
+    }
+    
+    paramsExpensive = {
+    'sort': '2',
+    'term': 'expensive',
+    'term': 'costly',
+    'term': 'pricey',
+    'term': 'fancy',
+    'term': 'upscale',
+    'term': 'rich',
+    'term': 'luxurious',
+    'term': 'first-class',
+    'term': 'high-priced',
+    'term': 'ultra-high end',
+    'lang': 'en',
+    }
+    
+    paramsLight = {
+    'sort': '2',
+    'term': 'light',
+    'term': 'vegan',
+    'term': 'vegitarian',
+    'term': 'snack',
+    'term': 'health',
+    'term': 'healthy',
+    'term': 'steamed',
+    'term': 'lean',
+    'term': 'grilled',
+    'term': 'garden',
+    'term': 'sushi',
+    'term': 'fresh',
+    'term': 'fruit',
+    'term': 'vitamins',
+    'term': 'salad',
+    'term': 'low calorie',
+    'term': 'diet',
+    'lang': 'en',
+    }
 
-
-
-paramsChain = {
-'sort': '2',
-'term': 'chain',
-'term': 'franchise',
-'term': 'consistent',
-'term': 'conservative',
-'term': 'easy',
-'term': 'regular',
-'term': 'large business',
-'term': 'corporation',
-'term': 'constant',
-'term': 'normal',
-'term': 'expected',
-'term': 'same',
-'term': 'well-known',
-'term': 'same',
-'term': 'famous',
-'term': 'expansion',
-'term': 'international',
-'lang': 'en',
-}
-
-paramsGroup = {
-
-'sort': '2',
-'term': 'group',
-'term': 'family',
-'term': 'friends',
-'term': 'group rate',
-'term': 'team',
-'term': 'teambuilding',
-'term': 'retreat',
-'term': 'clan',
-'term': 'class',
-'term': 'company',
-'term': 'crowd',
-'term': 'league',
-'term': 'congregation',
-'term': 'party',
-'term': 'assembly',
-'term': 'groups',
-'lang': 'en',
-
-}
-
-paramsSolo = {
-
-'sort': '2',
-'term': 'alone',
-'term': 'single',
-'term': 'books',
-'term': 'library',
-'term': 'museum',
-'term': 'spa',
-'term': 'massage',
-'term': 'park',
-'term': 'shopping',
-'term': 'stargazing',
-'term': 'movies',
-'term': 'rental',
-'term': 'introvert',
-'term': 'study',
-'term': 'meditation',
-'term': 'trail',
-'lang': 'en',
-
-}
-
-paramsNight = {
-
-'sort': '2',
-'term': 'night',
-'term': 'night life',
-'term': 'club',
-'term': 'bar',
-'term': 'concert',
-'term': 'pub',
-'term': 'stars',
-'term': 'late',
-'term': 'dark',
-'term': 'evening',
-'term': 'main event',
-'term': 'lounge',
-'term': 'hookah',
-'term': 'party',
-'term': 'arcade',
-'term': 'entertainment',
-'lang': 'en',
-
-}
-
-paramsDay = {
-
-'sort': '2',
-'term': 'day',
-'term': 'sunlight',
-'term': 'sports',
-'term': 'park',
-'term': 'sunny',
-'term': 'warm',
-'term': 'hiking',
-'term': 'bike',
-'term': 'swim',
-'term': 'water',
-'term': 'trail',
-'term': 'historical',
-'term': 'lunch',
-'term': 'breakfast',
-'term': 'early',
-'term': 'walk',
-'lang': 'en',
-
-}
-
-paramsAdult = {
-'sort': '2',
-'term': 'adult ',
-'term': 'alcohol',
-'term': 'over 21',
-'term': 'beer',
-'term': 'wine',
-'term': 'bar',
-'term': 'mature',
-'lang': 'en',
-}
-
-paramsKids = {
-'sort': '2',
-'term': 'family',
-'term': 'fun',
-'term': 'activities',
-'term': 'kid friendly',
-'term': 'children',
-'term': 'play',
-'term': 'baby',
-'term': 'parents',
-'term': 'safe',
-'term': 'family-style',
-'lang': 'en',
-}
-
-paramsCheap = {
-'sort': '2',
-'term': 'cheap',
-'term': 'low-priced',
-'term': 'reasonable',
-'term': 'low-cost',
-'term': 'economical',
-'term': 'budget',
-'term': 'bargain',
-'term': 'moderate',
-'term': 'inexpensive',
-'lang': 'en',
-}
-
-paramsExpensive = {
-'sort': '2',
-'term': 'expensive',
-'term': 'costly',
-'term': 'pricey',
-'term': 'fancy',
-'term': 'upscale',
-'term': 'rich',
-'term': 'luxurious',
-'term': 'first-class',
-'term': 'high-priced',
-'term': 'ultra-high end',
-'lang': 'en',
-}
+    paramsHearty = {
+    'sort': '2',
+    'term': 'hearty',
+    'term': 'all you can eat',
+    'term': 'beefy',
+    'term': 'fried',
+    'term': 'succulent',
+    'term': 'juicy',
+    'term': 'large quantity',
+    'term': 'big meal',
+    'term': 'meat',
+    'term': 'thick',
+    'term': 'zesty',
+    'term': 'rich',
+    'term': 'fat',
+    'term': 'stuffed',
+    'term': 'bang for buck',
+    'term': 'filling',
+    'term': 'unhealthy',
+    'lang': 'en',
+    }
     # do autolocation
 
     # get location from user 
@@ -397,6 +437,27 @@ paramsExpensive = {
         hun1 = raw_input()
     
         yelp(loc, hun1, paramsFast, paramsSitDown)
+        print
+        print '"{}"'.format('What sort of place? 1.local or 2.chain?')
+        hun2 = raw_input()
+
+        yelp(loc, hun2, paramsLocal, paramsChain)
+        print
+        print '"{}"'.format('What sort of audience 1.adult or 2.kids?')
+        hun2 = raw_input()
+    
+        yelp(loc, hun2, paramsAdult, paramsKids)
+        print
+        print '"{}"'.format('Price Range 1.light or 2.hearty?')
+        hun2 = raw_input()
+    
+        yelp(loc, hun2, paramsLight, paramsHearty)               
+                    
+        print
+        print '"{}"'.format('Price Range 1.cheap or 2.fancy?')
+        hun2 = raw_input()
+    
+        yelp(loc, hun2, paramsCheap, paramsExpensive)           
     
     elif(feeling == '2'):
         print
@@ -404,6 +465,28 @@ paramsExpensive = {
         fun1 = raw_input()
     
         yelp(loc, fun1, paramsActive, paramsChill)
+        
+        print
+        print '"{}"'.format('How many people? 1.group or 2.solo?')
+        hun2 = raw_input()
+    
+        yelp(loc, hun2, paramsGroup, paramsSolo)
+        print
+        print '"{}"'.format('What sort of audience 1.adult or 2.kids?')
+        hun2 = raw_input()
+    
+        yelp(loc, hun2, paramsAdult, paramsKids)
+        print
+        print '"{}"'.format('Price Range 1.night or 2.day?')
+        hun2 = raw_input()
+    
+        yelp(loc, hun2, paramsNight, paramsDay)               
+                
+        print
+        print '"{}"'.format('Price Range 1.cheap or 2.fancy?')
+        hun2 = raw_input()
+    
+        yelp(loc, hun2, paramsCheap, paramsExpensive)         
         
     print
     best = Counter(mainlist)
