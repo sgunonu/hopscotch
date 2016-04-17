@@ -185,8 +185,143 @@ def main():
     'lang': 'en',
     }
     
-    
-    
+paramsLocal = {
+'sort': '2',
+'term': 'local',
+'term': 'small business',
+'term': 'new',
+'term': 'start up',
+'term': 'trend',
+'term': 'trendy',
+'term': 'young',
+'term': 'hot spot',
+'term': 'fresh spin',
+'term': 'hole in the wall',
+'term': 'unknown',
+'term': 'secret',
+'term': 'fusion',
+'term': 'unique',
+'term': 'local deals',
+'term': 'family owned',
+'term': 'family operated',
+'lang': 'en',
+}
+
+
+
+paramsChain = {
+'sort': '2',
+'term': 'chain',
+'term': 'franchise',
+'term': 'consistent',
+'term': 'conservative',
+'term': 'easy',
+'term': 'regular',
+'term': 'large business',
+'term': 'corporation',
+'term': 'constant',
+'term': 'normal',
+'term': 'expected',
+'term': 'same',
+'term': 'well-known',
+'term': 'same',
+'term': 'famous',
+'term': 'expansion',
+'term': 'international',
+'lang': 'en',
+}
+
+paramsGroup = {
+
+'sort': '2',
+'term': 'group',
+'term': 'family',
+'term': 'friends',
+'term': 'group rate',
+'term': 'team',
+'term': 'teambuilding',
+'term': 'retreat',
+'term': 'clan',
+'term': 'class',
+'term': 'company',
+'term': 'crowd',
+'term': 'league',
+'term': 'congregation',
+'term': 'party',
+'term': 'assembly',
+'term': 'groups',
+'lang': 'en',
+
+}
+
+paramsSolo = {
+
+'sort': '2',
+'term': 'alone',
+'term': 'single',
+'term': 'books',
+'term': 'library',
+'term': 'museum',
+'term': 'spa',
+'term': 'massage',
+'term': 'park',
+'term': 'shopping',
+'term': 'stargazing',
+'term': 'movies',
+'term': 'rental',
+'term': 'introvert',
+'term': 'study',
+'term': 'meditation',
+'term': 'trail',
+'lang': 'en',
+
+}
+
+paramsNight = {
+
+'sort': '2',
+'term': 'night',
+'term': 'night life',
+'term': 'club',
+'term': 'bar',
+'term': 'concert',
+'term': 'pub',
+'term': 'stars',
+'term': 'late',
+'term': 'dark',
+'term': 'evening',
+'term': 'main event',
+'term': 'lounge',
+'term': 'hookah',
+'term': 'party',
+'term': 'arcade',
+'term': 'entertainment',
+'lang': 'en',
+
+}
+
+paramsDay = {
+
+'sort': '2',
+'term': 'day',
+'term': 'sunlight',
+'term': 'sports',
+'term': 'park',
+'term': 'sunny',
+'term': 'warm',
+'term': 'hiking',
+'term': 'bike',
+'term': 'swim',
+'term': 'water',
+'term': 'trail',
+'term': 'historical',
+'term': 'lunch',
+'term': 'breakfast',
+'term': 'early',
+'term': 'walk',
+'lang': 'en',
+
+}
     # do autolocation
     
     # get location from user 
