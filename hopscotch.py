@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Mar 28 22:31:09 2016
-
 @author: Karen
 """
 from collections import Counter
@@ -448,13 +447,13 @@ def main():
     
         yelp(loc, hun2, paramsAdult, paramsKids)
         print
-        print '"{}"'.format('Price Range 1.light or 2.hearty?')
+        print '"{}"'.format('Meal style? 1.light or 2.hearty?')
         hun2 = raw_input()
     
         yelp(loc, hun2, paramsLight, paramsHearty)               
                     
         print
-        print '"{}"'.format('Price Range 1.cheap or 2.fancy?')
+        print '"{}"'.format('Price Range? 1.cheap or 2.fancy?')
         hun2 = raw_input()
     
         yelp(loc, hun2, paramsCheap, paramsExpensive)           
@@ -477,13 +476,13 @@ def main():
     
         yelp(loc, hun2, paramsAdult, paramsKids)
         print
-        print '"{}"'.format('Price Range 1.night or 2.day?')
+        print '"{}"'.format('What time? 1.night or 2.day?')
         hun2 = raw_input()
     
         yelp(loc, hun2, paramsNight, paramsDay)               
                 
         print
-        print '"{}"'.format('Price Range 1.cheap or 2.fancy?')
+        print '"{}"'.format('Price Range? 1.cheap or 2.fancy?')
         hun2 = raw_input()
     
         yelp(loc, hun2, paramsCheap, paramsExpensive)         
@@ -501,8 +500,8 @@ def main():
         for i in range(len(bestlist)):
             for j in range(len(mainlist)):
                 if(bestlist[i][k][0] == mainlist[j]):
-                    position.append(j)
-                
+                     position.append(j)
+                     break
 #    print position
 #    print range(len(mainlist))
 #    print range(len(ratinglist))
