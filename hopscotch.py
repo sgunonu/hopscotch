@@ -322,8 +322,64 @@ paramsDay = {
 'lang': 'en',
 
 }
+
+paramsAdult = {
+'sort': '2',
+'term': 'adult ',
+'term': 'alcohol',
+'term': 'over 21',
+'term': 'beer',
+'term': 'wine',
+'term': 'bar',
+'term': 'mature',
+'lang': 'en',
+}
+
+paramsKids = {
+'sort': '2',
+'term': 'family',
+'term': 'fun',
+'term': 'activities',
+'term': 'kid friendly',
+'term': 'children',
+'term': 'play',
+'term': 'baby',
+'term': 'parents',
+'term': 'safe',
+'term': 'family-style',
+'lang': 'en',
+}
+
+paramsCheap = {
+'sort': '2',
+'term': 'cheap',
+'term': 'low-priced',
+'term': 'reasonable',
+'term': 'low-cost',
+'term': 'economical',
+'term': 'budget',
+'term': 'bargain',
+'term': 'moderate',
+'term': 'inexpensive',
+'lang': 'en',
+}
+
+paramsExpensive = {
+'sort': '2',
+'term': 'expensive',
+'term': 'costly',
+'term': 'pricey',
+'term': 'fancy',
+'term': 'upscale',
+'term': 'rich',
+'term': 'luxurious',
+'term': 'first-class',
+'term': 'high-priced',
+'term': 'ultra-high end',
+'lang': 'en',
+}
     # do autolocation
-    
+
     # get location from user 
     print '"{}"'.format('Please enter your current location')
     loc = raw_input()
