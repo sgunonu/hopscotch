@@ -70,7 +70,6 @@ def my_hun_post():
     print h5
 
     result = """<!DOCTYPE html>
-                    <head>You should hop over to...</head>
                         <body>
                             <p style="text-align:left;">"""+hop(loc,1,h1,h2,h3,h4,h5)+"""</p>
                         	<a href="/">Try Again?</a>
@@ -95,7 +94,6 @@ def my_fun_post():
     print f5
     
     result = """<!DOCTYPE html>
-                    <head>You should hop over to...</head>
                         <body>
                             <p style="text-align:left;">"""+hop(loc,2,f1,f2,f3,f4,f5)+"""</p>
                         	<a href="/">Try Again?</a>
@@ -619,7 +617,7 @@ def hop(l,c,q1,q2,q3,q4,q5):
             
     # Give result to user
     
-    
+    str1 = "You should hop over to: "
     print "You should hop over to: "
     str2 = mainlist[position[0]]
     print mainlist[position[0]]
@@ -631,7 +629,7 @@ def hop(l,c,q1,q2,q3,q4,q5):
     print ". City: "
     str6 = citylist[position[0]]
     print citylist[position[0]]
-    retstr = str2+str3+str4+str5+str6
+    retstr = str1+str2+str3+str4+str5+str6
     print retstr
     del mainlist[0:len(mainlist)]
     del ratinglist[0:len(ratinglist)]
