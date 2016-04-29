@@ -45,18 +45,28 @@
 <br>
 </body>
 
-<style>
+<style type="text/css"> 
 
 { margin: 0; padding: 0; }
 
-html { 
-        background: url('hunger.png')no-repeat; 
+html 
+	{ 
+        background: url('bg.png') no-repeat; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-}
-<img src="{{ url_for('static', filename = 'hunger.png') }}" width="200" height="85">
+	}
+img
+    {
+   		max-width: 100%;
+    	height: auto;
+    	display: block;
+   		margin: 0 auto;
+     }
+     
 
 </style>
+
+<img src="hopscotch.png" alt="Hopscotch">
 </html>
