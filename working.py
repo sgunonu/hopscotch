@@ -27,8 +27,7 @@ fun3 = '1'
 fun4 = '1'
 fun5 = '1'
 
-app = Flask(__name__, static_url_path = "", static_folder = "tmp")
-
+app = Flask(__name__)
 #GETTING USER RESULTS----------------------------------------------------
 @app.route('/')
 def my_form():
@@ -87,7 +86,7 @@ def my_fun_post():
     print f4
     f5 = request.form["bored5"]
     print f5
-
+    
     return  hop(loc,2,f1,f2,f3,f4,f5)
     
     
@@ -97,7 +96,7 @@ mainlist = []
 citylist = []
 
 def yelp(loc, c, paramsA, paramsB):
-   # print "YELP"
+    print "YELP"
     auth = Oauth1Authenticator(
         consumer_key="Q7OyV59ytZdO-zuAo3Rl0g",
         consumer_secret="xNOuCM0FhUthxpA8RFiQgEPtFaM",
@@ -106,9 +105,10 @@ def yelp(loc, c, paramsA, paramsB):
     )
     
     client = Client(auth)
-    #print "YELPC"
-   # print c
-    if(c == 1):
+    print "YELPC"
+    print c
+    if(c == 1 or c == '1'):
+        print 1111111111111111111111111111111111111111
 #        params1 = {
 #            'sort': '2',
 #            #'sort': '1',
@@ -118,7 +118,8 @@ def yelp(loc, c, paramsA, paramsB):
 #        }
        # print "YELP1"
         response = client.search(loc, **paramsA)
-    elif(c == 2):
+    elif(c == 2 or c == '2'):
+        print 222222222222222222222222222222222222222
 #        params2 = {
 #            'sort': '2',
 #            #'sort': '1',
@@ -129,7 +130,7 @@ def yelp(loc, c, paramsA, paramsB):
         response = client.search(loc, **paramsB)
 
     #print mainlist
-    #print "YELPM"
+    print "YELPM"
     for i in range(10):
  
         mainlist.append(response.businesses[i].name)
@@ -140,6 +141,7 @@ def yelp(loc, c, paramsA, paramsB):
 #@app.route('/', methods=['POST'])    
 def hop(l,c,q1,q2,q3,q4,q5):
     #print "IN HOP"
+    
     paramsHungry = {
     'sort': '2',
     'term': 'hungry',
@@ -510,7 +512,7 @@ def hop(l,c,q1,q2,q3,q4,q5):
     #print c
     yelp(l, c, paramsHungry, paramsBored)
     
-    if(c == '1'):
+    if(c == 1):
 #        print
 #        print '"{}"'.format('What sort of food? 1.fast or 2.sitdown?')
 #        hun1 = raw_input()
@@ -541,7 +543,7 @@ def hop(l,c,q1,q2,q3,q4,q5):
     
         yelp(l, q5, paramsCheap, paramsExpensive)           
     
-    elif(c == '2'):
+    elif(c == 2):
 #        print
 #        print '"{}"'.format('What sort of fun? 1.active or 2.chill?')        
 #        fun1 = raw_input()
@@ -618,6 +620,9 @@ def hop(l,c,q1,q2,q3,q4,q5):
     print citylist[position[0]]
     retstr = str1+str2+str3+str4+str5+str6
     print retstr
+    del mainlist[0:len(mainlist)]
+    del ratinglist[0:len(ratinglist)]
+    del citylist[0:len(citylist)]
     return retstr 
 
 if __name__ == '__main__':
