@@ -73,7 +73,7 @@ def my_hun_post():
                     <head>You should hop over to...</head>
                         <body>
                             <p style="text-align:left;">"""+hop(loc,1,h1,h2,h3,h4,h5)+"""</p>
-                        	<a href="/">Click me</a>
+                        	<a href="/">Try Again?</a>
                       </body>
                   </html>"""
     return result
@@ -98,7 +98,7 @@ def my_fun_post():
                     <head>You should hop over to...</head>
                         <body>
                             <p style="text-align:left;">"""+hop(loc,2,f1,f2,f3,f4,f5)+"""</p>
-                        	<a href="/">Click me</a>
+                        	<a href="/">Try Again?</a>
                       </body>
                   </html>"""
     return result
