@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
-
+<body style="font-family:papyrus;" >
+<div style="text-align:center">
 <img src="hopscotch.png" alt="Hopscotch">
 
     <form action="/hresults" method="POST">
@@ -9,7 +9,10 @@
 <h1>Satisfy your Hunger!</h1>
 <br>
 	<p>Please enter your location: <input type="text" name="text1"<br></p>
-<h3>Question 1: Something New or Tried and True?</h3>
+	
+<div style="position: absolute; left: 300px; top: 350px">
+
+<h3>Question 1: Something New or Popular Chain?</h3>
 
   <input type="radio" name="hunger1" value="1" checked> Something New!<br>
   <input type="radio" name="hunger1" value="2"> A Popular Chain!<br>
@@ -31,6 +34,9 @@
 
 <br>
 <br>
+</div>
+<div style="position: absolute; right: 150px; top: 350px">
+
 <h3>Question 4:What sort of food were you feeling?</h3>
 
   <input type="radio" name="hunger4" value="1" checked> Something Hearty!<br>
@@ -42,8 +48,14 @@
 
   <input type="radio" name="hunger5" value="1" checked> I'd like to get a good deal!<br>
   <input type="radio" name="hunger5" value="2"> Something Fancy!<br>
+  </div>  
+  <div style="position: absolute; right: 740px; top: 805px; height:50px; width:50px"><img src="back.png" alt="back"></div>
+  <div style="position: absolute; right: 470px; top: 808px; height:60px; width:60px"><img src="submit.png" alt="back"></div>
+
+
+  <div style="position: absolute; right: 450px; top: 800px"><input type="submit" name="my-form" value="" style= "background-color: Transparent; background-color: Transparent; background-repeat:no-repeat; height:50px; width:100px"></div>
+  <a href="/"><button type="button" value="Back" style="position: absolute; left: 550px; top: 800px; background-color: Transparent; background-color: Transparent; background-repeat:no-repeat; height:50px; width:100px"></button></a>
   
-  <input type="submit" name="my-form" value="Submit"> 
 </form>  
 <br>
 </body>
@@ -70,5 +82,4 @@ img
      
 
 </style>
-
 </html>
