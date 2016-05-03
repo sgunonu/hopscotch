@@ -1,13 +1,11 @@
 # Hopscotch
 How to run: 
-If not already installed, install the Yelp python package by typing into command prompt: pip install yelp
-
-then run the program using: python hopscotch.py
-go to your local server and view Hopscotch on http://127.0.0.1:5000
-
-1. Pick hungry or bored.
-2. Input city name.
-3. Answer questions based on mood.
+1. If not already installed, install the Yelp python package by typing into command prompt: pip install yelp
+2. Run the program using: python hopscotch.py
+3. Go to your web browser and view Hopscotch on your local server at http://127.0.0.1:5000
+4. Pick hungry or bored.
+5. Input city name.
+6. Answer questions based on mood.
 
 For example: 
 Location: Houston
