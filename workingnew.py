@@ -70,7 +70,7 @@ def my_hun_post():
     print h5
 
     result = """<!DOCTYPE html>
-					<body>
+				<body style="font-family:papyrus;" >
                       <style type="text/css"> 
 
 							{ margin: 0; padding: 0; }
@@ -126,7 +126,7 @@ def my_fun_post():
     print f5
     
     result = """<!DOCTYPE html>
-					<body>
+					<body style="font-family:papyrus;" >
                       <style type="text/css"> 
 
 							{ margin: 0; padding: 0; }
@@ -158,7 +158,9 @@ def my_fun_post():
 							<img src="bunny.png" alt="Bunny">
 							<div style="position: absolute; right: 390px; top: 515px; height:50px; width:100px"><img src="try.png" alt="bored "></div>
 
-                        <body>
+                        	<body style="font-family:papyrus;" >
+
+                        
                             <p style="text-align:center;">"""+hop(loc,2,f1,f2,f3,f4,f5)+"""</p>
                         	<p><a href="/"><button type="button" value="TRY AGAIN?" style="position: absolute; right: 390px; top: 510px; background-color: Transparent; background-color: Transparent; background-repeat:no-repeat; height:50px; width:100px"></button></a></p>
                       </body>
