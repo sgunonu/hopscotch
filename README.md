@@ -3,9 +3,11 @@ How to run:
 If not already installed, install the Yelp python package by typing into command prompt: pip install yelp
 
 then run the program using: python hopscotch.py
+go to your local server and view Hopscotch on http://127.0.0.1:5000
 
-1. Input city name.
-2. Answer questions based on mood.
+1. Pick hungry or bored.
+2. Input city name.
+3. Answer questions based on mood.
 
 For example: 
 Location: Houston
@@ -16,7 +18,9 @@ Question: What sort of food?
 1.fast or 2.sitdown
 Answer: 1
 
-These are the sample questions that we have ready for now. Each choice will have corresponding specific parameters related that will work along with the Yelp API to get optimal results. (The parameters are included in the hopscotch.py)
+Press submit and you will get an answer soon! If you are not satisfied by your result, try again.
+
+Each choice will have corresponding specific parameters related that will work along with the Yelp API to get optimal results. (The parameters are included in the hopscotch.py)
 
 If you are looking for "fast" if you are hungry the parameters will include; 'drive thru','drive through','fast food','fast','cashier','value menu','quick','self serve','food line','sandwich line','quantity','diner','counter','fast casual','take out','quick service','cafeteria'. Then, the mainlist will be populated by restaurants that are affiliated with these terms.
 
@@ -28,6 +32,7 @@ The following are the program's steps simplified:
 4. The program figures out the frequency of the businesses in the complete list.
 5. Then, it chooses the ones that appear most in the list.
 6. Finally, uses an equation similar to the TF-IDF to determine the best results. 
+7. Using a combination of flask, html and css our python code is displayed on a local server.
 
 For now, our program identifies the most common top three places in the lists and then multiplies their frequency by their rated scores. This method is therefore similar to a weighted TF-IDF scaling system. 
 
