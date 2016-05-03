@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
+<body style="font-family:papyrus;" >
 <img src="hopscotch.png" alt="Hopscotch">
 
 	<form action="/fresults" method="POST">
 	
-<h1>Lets find something fun!</h1>
+<div style="text-align:center"><h1>Lets find something fun!</h1>
 <br>
-	<p>Please enter your location: <input type="text" name="text1"<br></p>
+	<p>Please enter your location: <input type="text" name="text1"<br></p></div>
+	
+<div style="position: absolute; left: 300px; top: 350px">
+
 <h3>Question 1: Are you in a group or going solo?</h3>
 
   <input type="radio" name="bored1" value="1" checked> Group!<br>
@@ -30,6 +33,9 @@
 
 <br>
 <br>
+</div>
+<div style="position: absolute; right: 150px; top: 350px">
+
 <h3>Question 4:What time of day?</h3>
 
   <input type="radio" name="bored4" value="1" checked> Night!<br>
@@ -41,12 +47,22 @@
 
   <input type="radio" name="bored5" value="1" checked> Cheap is good!<br>
   <input type="radio" name="bored5" value="2"> Price is no object!<br>
+  </div>
+	
+ 
+  <div style="position: absolute; right: 740px; top: 805px; height:50px; width:50px"><img src="back.png" alt="back"></div>
+  <div style="position: absolute; right: 470px; top: 808px; height:60px; width:60px"><img src="submit.png" alt="back"></div>
 
-  <input type="submit" name="my-form" value="Submit"> 
+
+  <div style="position: absolute; right: 450px; top: 800px"><input type="submit" name="my-form" value="" style= "background-color: Transparent; background-color: Transparent; background-repeat:no-repeat; height:50px; width:100px"></div>
+  <a href="/"><button type="button" value="Back" style="position: absolute; left: 550px; top: 800px; background-color: Transparent; background-color: Transparent; background-repeat:no-repeat; height:50px; width:100px"></button></a>
+  
+  
+</button>
 </form>  
 <br>
 </body>
-
+</div>
 <style>
 
 <style type="text/css"> 
@@ -63,10 +79,10 @@ html
 	}
 img
     {
-   		max-width: 100%;
+   	max-width: 100%;
     	height: auto;
     	display: block;
-   		margin: 0 auto;
+   	margin: 0 auto;
      }
      
 
